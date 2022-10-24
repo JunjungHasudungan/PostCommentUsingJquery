@@ -11,8 +11,8 @@ class Comment extends Model
 
     protected $guarded=[];
 
-    public function post()
+    public function posts()
     {
-        return $this->belongsTo(Post::class);
+        return $this->belongsTo(Post::class, 'post_id');
     }
 }

@@ -14,7 +14,9 @@ class CommentController extends Controller
      */
     public function index()
     {
-        //
+        $comments = Comment::with('posts')->get();
+        // dd($comments);
+        return view('comments.index', ['comments' => $comments]);
     }
 
     /**

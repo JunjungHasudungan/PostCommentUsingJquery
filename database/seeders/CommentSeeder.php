@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Comment;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -24,5 +25,7 @@ class CommentSeeder extends Seeder
                 'post_id'       => 2,
             ]
         ];
+
+        Comment::insert($comments);
     }
 }
