@@ -18,11 +18,13 @@ class PostSeeder extends Seeder
         $posts =[
             [
                 'title'         => 'Post 1',
-                'description'   => 'Post pertama'
+                'description'   => 'Post pertama',
+                'user_id'       => 1
             ],
             [
                 'title'         => 'Post 2',
-                'description'   => 'Post Kedua'
+                'description'   => 'Post Kedua', 
+                'user_id'       => null
             ]
         ];
 

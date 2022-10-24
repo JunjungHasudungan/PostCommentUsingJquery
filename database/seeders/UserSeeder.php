@@ -20,19 +20,16 @@ class UserSeeder extends Seeder
                 'name'      => 'Hasudungan',
                 'email'     => 'hasudungan@gmail.com',
                 'password'  => bcrypt('admin01'),
-                'post_id'   => null,  
             ],
             [
                 'name'      => 'Satrio Kuncoro',
                 'email'     => 'satrioKuncoro@gmail.com',
                 'password'  => bcrypt('satrioKun!!!'),
-                'post_id'   => 1,  
             ],
             [
                 'name'      => 'Arief Cendana',
                 'email'     => 'ariefCendana@gmail.com',
                 'password'  => bcrypt('ariefCendana!!!'),
-                'post_id'   => 2,  
             ]
         ];
 

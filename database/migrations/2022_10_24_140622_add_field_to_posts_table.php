@@ -15,7 +15,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->foreignIdFor(User::class)->nullable()->cascadeOnUpdate();
+            $table->foreignIdFor(User::class)->after('description')->nullable()->cascadeOnUpdate();
         });
     }
 
