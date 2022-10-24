@@ -14,7 +14,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::with(['users', 'comments'])->get();
+        $posts = Post::with(['user', 'comments'])->get();
+        // Post::find(1)->
 
         // dd($posts);
         // foreach ($posts as  $item) {
