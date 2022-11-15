@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <!-- Styles -->
         <style>
@@ -19,6 +20,13 @@
                 font-family: 'Nunito', sans-serif;
             }
         </style>
+
+        {{-- memanggil app js melalui vite --}}
+        @vite('resource/js/app.js')
+
+        <script type="module">
+            $('body').html('<h1> Testing </h1>');
+        </script>
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
