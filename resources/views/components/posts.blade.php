@@ -1,13 +1,20 @@
-<div>
-    <h1 class="text-center mb-10 bg-slate-600">Ini component posts</h1>
-    <ul>
-        @forelse ($posts as $item)
-        <li class="text-center">Judul: {{$item->title}}</li>
-        <li class="text-center"> Keterangan:  {{$item->description}} </li>
-        <li class="text-center">User: {{$item->user->name ?? 'Tidak ada' }} </li>
-            
-        @empty
-            <li class="text-center bg-yellow-500 bg-auto w-auto"> Tidak ada data</li>
-        @endforelse
-    </ul>
-</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+<body>
+
+    <p>If you click on the "Hide" button, I will disappear.</p>
+    
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    
+    </body>
